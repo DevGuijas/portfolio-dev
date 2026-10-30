@@ -10,8 +10,8 @@ export const defaultSettings = {
   heroDescription: 'Olá, eu sou Guilherme. Este é meu espaço para compartilhar projetos, explorar possibilidades e transformar ideias em experiências digitais.',
   heroButton: 'Explorar projetos', portrait: '/portrait.png', portraitAlt: 'Retrato ilustrado de Guilherme Sampaio',
   aboutImage: '/about-code.png', aboutImageAlt: 'Ícone metálico de código HTML',
-  aboutTitle: 'Curiosidade para pensar. Código para criar.',
-  aboutText: 'Um espaço em constante construção. Aqui compartilho o que desenvolvo, o que aprendo e as ideias que tiro do papel.',
+  aboutTitle: 'Proatividade para agir. Código para entregar.',
+  aboutText: 'Do requisito à entrega: escrevo código estruturado, monto ambientes de homologação com Docker e testo antes de publicar.',
   skills: ['Node.js', 'React', 'MySQL', 'Docker Compose'],
   skillDetails: [
     { name: 'Node.js', image: '/icons/nodejs.png', description: 'Desenvolvimento de aplicações e APIs no servidor.', detail: 'Back-end' },
