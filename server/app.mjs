@@ -111,7 +111,7 @@ export function createApp({ db, dataDir = resolve(root, 'data'), origin = 'http:
   app.use('/api', (req, res) => res.status(404).json({ error: 'Rota não encontrada.' }));
   app.use('/uploads', express.static(resolve(dataDir, 'uploads'), { dotfiles: 'deny', index: false, maxAge: '1d' }));
   app.use(express.static(resolve(root, 'dist'), { dotfiles: 'deny', index: false, maxAge: '1h' }));
-  app.get(['/', '/admin', '/admin/'], (req, res) => { res.set('Cache-Control', 'no-cache'); res.sendFile(resolve(root, 'dist/index.html')); });
+  app.get(['/', '/superadmin', '/superadmin/'], (req, res) => { res.set('Cache-Control', 'no-cache'); res.sendFile(resolve(root, 'dist/index.html')); });
   app.use((req, res) => res.status(404).send('Página não encontrada.'));
   app.use((err, req, res, next) => {
     if (err instanceof z.ZodError) return res.status(400).json({ error: 'Verifique os campos informados.', details: err.issues.map(i => `${i.path.join('.')}: ${i.message}`) });
